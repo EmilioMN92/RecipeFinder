@@ -9,7 +9,7 @@
 	<% @recipes.each do |r| %>
 	<tr>
 		<td> <%= link_to "#{image_tag(r["image_url"], size: "100")}".html_safe, "#{r["source_url"]}" %> </td>
-		<td> <%= r["title"] %> </td>
+		<td> <%= sanitize r["title"] %> </td>
 		<td> <%= link_to "#{r["source_url"]}".html_safe, "#{r["source_url"]}" %>  </td>
 	</tr>
 	<% end %>
