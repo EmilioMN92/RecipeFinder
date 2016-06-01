@@ -43,3 +43,6 @@ group :development, :test do
   gem 'spring'
 end
 
+
+# Añado HTTPARTY manualmente
+gem 'httparty', '0.13.5'

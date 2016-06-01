@@ -6,10 +6,12 @@
 		<th>Title</th>
 		<th>URL to the receipe</th>
 	</tr>
+	<% @recipes.each do |r| %>
 	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td> <%= image_tag(r["image_url"], size: "100") %> </td>
+		<td> <%= r["title"] %> </td>
+		<td> <%= r["source_url"] %> </td>
 	</tr>
+	<% end %>
 
 </table>
